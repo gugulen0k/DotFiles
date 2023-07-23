@@ -38,12 +38,6 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
   use "christoomey/vim-tmux-navigator"
-  -- use {
-  --   "connordeckers/tmux-navigator.nvim",
-  --   config = function()
-  --     require("tmux-navigator").setup { enable = true }
-  --   end,
-  -- } -- Allows for seamless navigation between Tmux and Neovim, using the same keybinds wherever possible.
 
   -- General language plugins
   use "tpope/vim-surround"
@@ -110,6 +104,10 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-calc"
   use "f3fora/cmp-spell"
   use "L3MON4D3/LuaSnip"
+  use "onsails/lspkind.nvim"
+  use "andymass/vim-matchup"
+  use "lewis6991/gitsigns.nvim"
+  use 'Vonr/align.nvim'
 
   -- Language support plugins
   use "vim-ruby/vim-ruby"
