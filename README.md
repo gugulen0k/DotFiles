@@ -4,7 +4,7 @@
 
 * **rubytags**:
 	* Install **GPG**
-	* Install **RVM - Ruby Version Manager** ( more info [here](https://rvm.io/rvm/install) )
+	* Install **rbenv - Ruby Version Manager** ( more info [here](https://github.com/rbenv/rbenv.git) )
 	* Select prefered Ruby version
 	* Install **ripper-tags** ( more info [here](https://rubygems.org/gems/ripper-tags) ) `gem install ripper-tags`
 	> ripper-tags are used for better search specifically in ruby files
