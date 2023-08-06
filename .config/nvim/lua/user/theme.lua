@@ -36,21 +36,6 @@ require('rose-pine').setup({
 		-- or set all headings at once
 		-- headings = 'subtle'
 	},
-
-	-- Change specific vim highlight groups
-	-- https://github.com/rose-pine/neovim/wiki/Recipes
-	highlight_groups = {
-		ColorColumn = { bg = 'rose' },
-
-		-- Blend colours against the "base" background
-		CursorLine = { bg = 'foam', blend = 10 },
-		StatusLine = { fg = 'love', bg = 'love', blend = 10 },
-
-		-- By default each group adds to the existing config.
-		-- If you only want to set what is written in this config exactly,
-		-- you can set the inherit option:
-		Search = { bg = 'gold', inherit = false },
-	}
 })
 
 -- Set colorscheme after options
