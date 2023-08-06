@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="gugulenok-dark"
+ZSH_THEME="gugulenok-light"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -9,14 +9,14 @@ ZSH_THEME="gugulenok-dark"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-        git
-        bundler
-        ruby
-        rake
-        web-search          # Adds aliases for searching with Google, Wiki, Bing, YouTube and other popular services
-        copypath            # Copies the path of given directory or file to the system clipboard.
-        colored-man-pages
-        colorize
+  git
+  bundler
+  ruby
+  rake
+  web-search          # Adds aliases for searching with Google, Wiki, Bing, YouTube and other popular services
+  copypath            # Copies the path of given directory or file to the system clipboard.
+  colored-man-pages
+  colorize
 	tmux
 )
 

@@ -92,6 +92,12 @@ return packer.startup(function(use)
           {"nvim-treesitter/nvim-treesitter"}
       }
   })
+  use {
+    'andymass/vim-matchup',
+    setup = function()
+      vim.g.matchup_matchparen_offscreen = { method = "popup" }
+    end
+  }
   use "junegunn/fzf"
   use "junegunn/fzf.vim"
   use "junegunn/vim-easy-align"
@@ -111,6 +117,8 @@ return packer.startup(function(use)
 
   -- Language support plugins
   use "vim-ruby/vim-ruby"
+  use "tpope/vim-haml"
+  use "kchmck/vim-coffee-script"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

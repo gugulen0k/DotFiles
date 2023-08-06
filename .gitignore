@@ -2,3 +2,4 @@
 fish/
 
 /.config/alacritty/*.bak
+/.config/nvim/plugin/
