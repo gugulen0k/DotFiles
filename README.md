@@ -1,6 +1,6 @@
 # Alacritty + NeoVim + ZSH + tmux config files
 
-### # Requirements
+## Requirements
 
 * **rubytags**:
 	* Install **GPG**
@@ -10,8 +10,9 @@
 	> ripper-tags are used for better search specifically in ruby files
 * **ripgrep** ( more info  ): Find the way how to download ripgrep for each OS [here](https://github.com/BurntSushi/ripgrep#installation)
 * **Fantasque Sans Mono** fonts: Install different types of font from `FantsqueSansMono` folder
+* **tpm**: Install tmux plugin manager from [here](https://github.com/tmux-plugins/tpm.git)
 
-### # Creating symlinks(symbolic links) for configuration files
+## # Creating symlinks(symbolic links) for configuration files
 
 > ⚠️ **Warning!**
 > If you already have your configuration files and/or `.config` folder, make sure that you copied/moved your files somewhere else from home directory, this way you won't lose your current configuration.
