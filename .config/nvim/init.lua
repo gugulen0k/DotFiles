@@ -1,7 +1,7 @@
 -- Configuration lua files
 require('user.plugins')
 require('user.treesitter')
-require('user.theme')
+require('user.themes.tokyonight')
 require('user.keymaps')
 require('user.lualine')
 require('user.nvimtree')
@@ -16,7 +16,7 @@ local opt = vim.opt
 local glb = vim.g
 
 -- options settings
-opt.background     = 'dark'
+opt.background     = "dark"
 opt.cursorline     = true                -- highlight current line
 opt.encoding       = "utf-8"
 opt.ignorecase     = true                -- ignore case in search
@@ -34,9 +34,10 @@ opt.wrap           = false
 opt.clipboard      = "unnamedplus"
 
 -- global settings
-glb.loaded_netrw                 = 1 -- disable netrw
-glb.loaded_netrwPlugin           = 1
-glb.matchup_matchparen_offscreen = { method = "popup" }
+glb.loaded_netrw                  = 1 -- disable netrw
+glb.loaded_netrwPlugin            = 1
+glb.matchup_matchparen_offscreen  = { method = "popup" }
+glb["deoplete#enable_at_startup"] = 1
 
 vim.cmd('filetype plugin on')
 vim.cmd('nmap ga <Plug>(EasyAlign)')

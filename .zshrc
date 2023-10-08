@@ -1,7 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR='nvim'
 
-ZSH_THEME="gugulenok-light"
+ZSH_THEME="gugulenok-dark"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -27,6 +28,7 @@ ZSH_TMUX_AUTOSTART=true
 
 # Different aliases
 alias c="clear"
+alias mux="tmuxinator"
 
 # Git aliases
 alias gaa="git add ."

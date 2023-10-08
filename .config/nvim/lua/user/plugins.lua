@@ -48,6 +48,7 @@ return packer.startup(function(use)
 
   -- Cosmetical plugins (with themes)
   use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use "folke/tokyonight.nvim"
   use { 'mrshmllow/document-color.nvim', config = function()
     require("document-color").setup {
       -- Default options
@@ -57,10 +58,6 @@ return packer.startup(function(use)
 }
 
   -- IDE plugins
-  use "onsails/lspkind.nvim"
-  use "nvim-tree/nvim-tree.lua"
-  use "nvim-tree/nvim-web-devicons"
-  use "lukas-reineke/indent-blankline.nvim"     -- Indentation guides to all lines
   use {
     "nvim-lualine/lualine.nvim",
     requires = { "nvim-tree/nvim-web-devicons", opt = true }
@@ -78,26 +75,17 @@ return packer.startup(function(use)
       "neovim/nvim-lspconfig",
       run = ":MasonUpdate" -- :MasonUpdate updates registry contents
   }
-  use({
-      "glepnir/lspsaga.nvim",
-      opt = true,
-      branch = "main",
-      event = "LspAttach",
-      config = function()
-        require("lspsaga").setup({})
-      end,
-      requires = {
-          {"nvim-tree/nvim-web-devicons"},
-          --Please make sure you install markdown and markdown_inline parser
-          {"nvim-treesitter/nvim-treesitter"}
-      }
-  })
   use {
     'andymass/vim-matchup',
     setup = function()
       vim.g.matchup_matchparen_offscreen = { method = "popup" }
     end
   }
+  -- use "Shougo/deoplete.nvim"
+  use "onsails/lspkind.nvim"
+  use "nvim-tree/nvim-tree.lua"
+  use "nvim-tree/nvim-web-devicons"
+  use "lukas-reineke/indent-blankline.nvim"     -- Indentation guides to all lines
   use "junegunn/fzf"
   use "junegunn/fzf.vim"
   use "junegunn/vim-easy-align"
@@ -110,8 +98,6 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-calc"
   use "f3fora/cmp-spell"
   use "L3MON4D3/LuaSnip"
-  use "onsails/lspkind.nvim"
-  use "andymass/vim-matchup"
   use "lewis6991/gitsigns.nvim"
   use 'Vonr/align.nvim'
 

@@ -45,4 +45,4 @@ font:
 #     style: Italic
 
 import:
-  - ~/.config/alacritty/rose-pine-dawn.yml
+  - ~/.config/alacritty/themes/tokyonight/tokyonight_night.yml
